@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    height: 200px;
+}
+header h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+}
+header p {
+    margin: 20px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+main {
+    font-family: "Cookie", cursive;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+main p {
+    margin: 25px 0;
+    /* font-size: 1.5rem; */
+    line-height: 2.2rem;
+}
+main article:nth-child(odd) > p {
+    padding: 20px;
+}
+main article:nth-child(even) > p {
+    padding: 20px;
+}
+
+footer p {
+    display: flex;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.paralaxe1 {
+    display: flex;
+    align-items: center;
+    height: 550px;
+    background-image: url("../img/background001.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+.paralaxe1 > p {
+    background-color: #0000005d;
+    color: #fff;
+    /* padding: 30px 15px; */
+}
+
+.paralaxe2 {
+    display: flex;
+    align-items: center;
+    height: 550px;
+    background-image: url("../img/background002.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+.paralaxe2 > p {
+    background-color: #0000005d;
+    color: #fff;
+    padding: 30px 15px;
+}
+
+article > img {
+    max-width: 100vw;
+}
